@@ -6,6 +6,7 @@ export class App extends Component  {
         <div className="app">
           <h1>Hello World!</h1>
           <p>Foo to the bar</p>
+          <h2>React test</h2>
         </div>
     );
   }
