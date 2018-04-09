@@ -1,0 +1,20 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn_open {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
