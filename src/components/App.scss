@@ -1,6 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  transition: visibility 0s 0.6s;
+}
+
+.slidepanel_wrapper {
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
 }
 
 .btn_open {
@@ -8,6 +20,8 @@
   padding: 5px 10px;
   border-radius: 5px;
   margin: 0 auto;
+  background-color: #00ad00;
+  color: #fff;
 
   &:hover {
     cursor: pointer;
@@ -17,4 +31,3 @@
     outline: none;
   }
 }
-
