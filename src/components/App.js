@@ -38,11 +38,13 @@ export class App extends Component {
                 <Slidepanel
                     closePanel = { this.closePanel }
                     isPanelOpen = { isPanelOpen }
-                    bottom
-                    width = { '100%' }
-                    height = { '50%' }
-                    bgColor = { '#0077b2' }
-                />
+                    left
+                    width = { '50%' }
+                    height = { '100%' }
+                    bgColor = { '#FFFAF0' }
+                >
+                    <h3 className='title_child_comp'>Children element</h3>
+                </Slidepanel>
             </div>
         );
     }

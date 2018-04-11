@@ -17,7 +17,8 @@ export class Slidepanel extends Component {
             bottom,
             width,
             height,
-            bgColor
+            bgColor,
+            children
         } = this.props;
 
         const CN = cx(
@@ -38,9 +39,13 @@ export class Slidepanel extends Component {
 
         return (
             <div className={cx(CN)} style={PanelStyle}>
-                <h4>Slide panel</h4>
-                <p>Content</p>
-                <button onClick = { closePanel }>Close panel</button>
+                <div className='wrapp_close_btn'>
+                    <div
+                        className='btn_close_panel'
+                        onClick = { closePanel }
+                    />
+                </div>
+                {children}
             </div>
         )
     }
