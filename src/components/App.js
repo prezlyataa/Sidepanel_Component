@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.scss';
 import { Slidepanel } from './Slidepanel/';
+import './App.scss';
 
 export class App extends Component {
     constructor(props) {
@@ -35,12 +35,14 @@ export class App extends Component {
                         Open Sidepanel
                     </button>
                 </div>
-                <div className="slidepanel_wrapper">
-                    <Slidepanel
-                        closePanel = { this.closePanel }
-                        isPanelOpen = { isPanelOpen }
-                    />
-                </div>
+                <Slidepanel
+                    closePanel = { this.closePanel }
+                    isPanelOpen = { isPanelOpen }
+                    bottom
+                    width = { '100%' }
+                    height = { '50%' }
+                    bgColor = { '#0077b2' }
+                />
             </div>
         );
     }

@@ -1,13 +1,20 @@
 .slidepanel {
-  background-color: #0077b2;
   color: #fff;
   position: fixed;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  transition: top 1s linear;
+}
 
-  &_title {
-    font-size: 24px;
-  }
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
 }
