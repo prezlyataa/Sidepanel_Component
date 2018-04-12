@@ -22,6 +22,8 @@ export class Slidepanel extends Component {
             setWrapperRef
         } = this.props;
 
+        const CNW = "slidepanel_wrapper";
+
         const CN = cx(
             "slidepanel",
             {"right": right},
@@ -39,11 +41,10 @@ export class Slidepanel extends Component {
         if(!isPanelOpen) { return null; }
 
         return (
-            <div
-                className = "slidepanel_wrapper"
-            >
+            <div className = {cx(CNW)}>
                 <div
-                    className={cx(CN)} style={PanelStyle}
+                    className = {cx(CN)}
+                    style = { PanelStyle }
                     ref = { setWrapperRef }
                 >
                     <div className="wrapp_close_btn">

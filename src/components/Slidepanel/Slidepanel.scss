@@ -6,8 +6,16 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.slidepanel_wrapper:hover {
+  cursor: pointer;
+}
+
 .slidepanel {
   position: fixed;
+}
+
+.slidepanel:hover {
+  cursor: default;
 }
 
 .wrapp_close_btn {

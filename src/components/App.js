@@ -59,9 +59,9 @@ export class App extends Component {
                     setWrapperRef = { this.setWrapperRef }
                     closePanel = { this.closePanel }
                     isPanelOpen = { isPanelOpen }
-                    left
-                    width = { "50%" }
-                    height = { "100%" }
+                    top
+                    width = { "100%" }
+                    height = { "20%" }
                     bgColor = { "#FFFAF0" }
                 >
                     <h3 className="title_child_comp">Children element</h3>
