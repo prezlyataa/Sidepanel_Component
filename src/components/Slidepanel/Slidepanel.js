@@ -18,15 +18,16 @@ export class Slidepanel extends Component {
             width,
             height,
             bgColor,
-            children
+            children,
+            setWrapperRef
         } = this.props;
 
         const CN = cx(
-            'slidepanel',
-            {'right': right},
-            {'left': left},
-            {'top': top},
-            {'bottom': bottom}
+            "slidepanel",
+            {"right": right},
+            {"left": left},
+            {"top": top},
+            {"bottom": bottom}
         );
 
         const PanelStyle = {
@@ -38,14 +39,21 @@ export class Slidepanel extends Component {
         if(!isPanelOpen) { return null; }
 
         return (
-            <div className={cx(CN)} style={PanelStyle}>
-                <div className='wrapp_close_btn'>
-                    <div
-                        className='btn_close_panel'
-                        onClick = { closePanel }
-                    />
+            <div
+                className = "slidepanel_wrapper"
+            >
+                <div
+                    className={cx(CN)} style={PanelStyle}
+                    ref = { setWrapperRef }
+                >
+                    <div className="wrapp_close_btn">
+                        <div
+                            className="btn_close_panel"
+                            onClick = { closePanel }
+                        />
+                    </div>
+                    {children}
                 </div>
-                {children}
             </div>
         )
     }

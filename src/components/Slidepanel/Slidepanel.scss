@@ -1,3 +1,11 @@
+.slidepanel_wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .slidepanel {
   position: fixed;
 }
@@ -12,11 +20,14 @@
   width: 32px;
   height: 32px;
   transition: transform 0.25s ease-in-out;
+  padding: 5px;
 }
 
 .btn_close_panel:hover {
   transform: rotate(180deg);
   cursor: pointer;
+  background-color: #fff;
+  border-radius: 20px;
 }
 
 .btn_close_panel::before {

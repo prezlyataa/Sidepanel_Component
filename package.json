@@ -66,8 +66,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "postcss-sass": "^0.2.0",
-    "prezl_lib": "0.0.1"
+    "postcss-sass": "^0.2.0"
   },
   "postcss": {}
 }
