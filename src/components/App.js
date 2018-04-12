@@ -52,16 +52,16 @@ export class App extends Component {
                         className="btn_open"
                         onClick = {this.openPanel}
                     >
-                        Open Sidepanel
+                        Open left Slidepanel
                     </button>
                 </div>
                 <Slidepanel
                     setWrapperRef = { this.setWrapperRef }
                     closePanel = { this.closePanel }
                     isPanelOpen = { isPanelOpen }
-                    top
-                    width = { "100%" }
-                    height = { "20%" }
+                    left
+                    width = { "35%" }
+                    height = { "100%" }
                     bgColor = { "#FFFAF0" }
                 >
                     <h3 className="title_child_comp">Children element</h3>
